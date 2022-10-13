@@ -7,7 +7,6 @@ var dailyTemperatures = function (temperatures) {
   let result = new Array(n).fill(0);
   let stack = [0];
   for (let i = 1; i < n; i++) {
-    debugger;
     if (temperatures[i] <= temperatures[stack[stack.length - 1]]) {
       stack.push(i);
     } else {
